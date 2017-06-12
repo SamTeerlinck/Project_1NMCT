@@ -14,5 +14,8 @@ class BeatListener implements AudioListener
   {
     beat.detect(source.mix);
   }
-  
+  void samples(float[] sampsL, float[] sampsR)
+  {
+    beat.detect(source.mix);
+  }
 }

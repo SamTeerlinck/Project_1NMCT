@@ -1,6 +1,3 @@
 #! /bin/bash
-{
-  cd /home/pi/Music/guitest.py
-  sudo python guitest.py
-}
-&>/dev/null
+cd /home/pi/Music/musicplayer &>/dev/null
+sudo python MusicPlayer.py &>/dev/null

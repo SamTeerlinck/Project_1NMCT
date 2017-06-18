@@ -8,7 +8,7 @@ Sam Teerlinck
 Imports
 """
 import easygui		#easygui library for the interface
-import glob			#to read file location
+import glob		#to read file location
 import pygame		#to play the music
 
 """

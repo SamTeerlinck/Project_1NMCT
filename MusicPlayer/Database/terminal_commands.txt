@@ -1,0 +1,16 @@
+The following commands will create database and a user with all privileges.
+
+sudo apt-get install mysql-server python-mysqldb
+
+$ mysql -u root -p
+Enter password:
+mysql> CREATE DATABASE musicplayer
+mysql> USE musicplayer
+
+mysql> CREATE USER 'samteerlinck'@'localhost' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON musicplayer.* TO 'samteerlinck'@'localhost'
+mysql> FLUSH PRIVILEGES;
+mysql> quit
+
+mysql -u samteerlinck -p
+CREATE TABLE played (playedid NUMERIC, playeddate DATE, playedtime TIME, songname TEXT, timesplayed NUMERIC);

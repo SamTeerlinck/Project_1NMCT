@@ -13,4 +13,4 @@ mysql> FLUSH PRIVILEGES;
 mysql> quit
 
 mysql -u samteerlinck -p
-CREATE TABLE played (playedid NUMERIC, playeddate DATE, playedtime TIME, songname TEXT, timesplayed NUMERIC);
+CREATE TABLE played (playedid INT auto_increment, playeddate DATE, playedtime TIME, songname TEXT);
